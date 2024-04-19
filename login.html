@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <input type="password" id="pin" placeholder="Enter PIN">
+    <button onclick="login()">Login</button>
+  </div>
+
+  <div class="chat-container" style="display: none;">
+    <h2>Chat</h2>
+    <div id="user-list"></div>
+    <div id="chat-messages"></div>
+    <textarea id="message" placeholder="Type your message"></textarea>
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+  <div class="profile-container" style="display: none;">
+    <h2>User Profile</h2>
+    <img id="profile-picture" src="placeholder.jpg" alt="Profile Picture">
+    <h3 id="event-name">Event Name</h3>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
